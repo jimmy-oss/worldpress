@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% if title %}
+        <title> {{ title }}</title>
+        {% else %}
+        <title> Welcome to WorldPress </title>
+        {% endif %}
+    </head>
+    <body>
+        <div class = "head">TODAY'S TOP HEADLINES</div>
+        {% for title,desc,img,p_date,url in contents %}
+        <div class="wrapper">
+            <div class="item"><a href="{{url}}"><img src="{{img}}"></a></div>
+            <div class = "c-box">
+            <div class="content"><a href="{{url}}"><h2>{{title}}</h2></a></div>
+            <div class="content"><a href="{{url}}"><p>{{desc}}</p></a></div>
+            <div class="content"><p style="color:rgb(77, 255, 0);">Publish Date:- </p><p>{{p_date}}</p></div>
+            </div>
+            </div> 
+        {% endfor %}  
+ </body>
+</html>
