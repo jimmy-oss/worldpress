@@ -9,13 +9,14 @@
     <link rel="icon" href="../static/iconmonstr-newspaper-3.svg">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>News Website</title>
+    {% import 'news.html' as news%}
 </head>
 <body>
     <nav>
-        <a href="/" class="logo"><h2>World Press</h2></a>
+        <a href="/" class="logo"><h2>WorldPress</h2></a>
         <ul class= "menu">
             <li class="nav-items"><a href='/'>Home</a></li>
-            <li class="nav-items"><a href='/'>News</a></li>
+            <li class="nav-items"><a href='./news.html'>News</a></li>
             <li class="nav-items"><a href='/'>Blogs</a></li>
             <li class="nav-items"><a href='/'>Contact</a></li>
         </ul>
@@ -58,7 +59,7 @@
         </div> 
     {% endfor %}
 <footer>
-<div class="head-f"><h2> Copyright &copy; World Press 2022</h2></div>
+<div class="head-f"><h2> Copyright &copy; WorldPress 2022</h2></div>
 </footer>
 </body>
 </html>
