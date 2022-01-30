@@ -1,24 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title> Welcome to WorldPress </title>
-        {% endif %}
-    </head>
-    <body>
-        <div class = "head">TODAY'S TOP HEADLINES</div>
-        {% for title,desc,img,p_date,url in contents %}
-        <div class="wrapper">
-            <div class="item"><a href="{{url}}"><img src="{{img}}"></a></div>
-            <div class = "c-box">
-            <div class="content"><a href="{{url}}"><h2>{{title}}</h2></a></div>
-            <div class="content"><a href="{{url}}"><p>{{desc}}</p></a></div>
-            <div class="content"><p style="color:rgb(77, 255, 0);">Publish Date:- </p><p>{{p_date}}</p></div>
-            </div>
-            </div> 
-        {% endfor %}  
- </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="../static/iconmonstr-newspaper-3.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>News Website</title>
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo"><h2>WorldPress</h2></a>
+        <ul class= "menu">
+            <li class="nav-items"><a href='/'>Home</a></li>
+            <li class="nav-items"><a href='/'>News</a></li>
+            <li class="nav-items"><a href='/'>Blogs</a></li>
+            <li class="nav-items"><a href='/'>Contact</a></li>
+        </ul>
+    </nav>
+<section id="main">
+    <h2>Welcome to the WorldPress 🌎 </h2>
+    <div class="banner"><video src="../static/reporter.mp4" muted loop autoplay></video>
+    </div>
+    <div class = "head">TODAY'S TOP HEADLINES</div>
+    {% for title,desc,img,p_date,url in contents %}
+    <div class="wrapper">
+        <div class="item"><a href="{{url}}"><img src="{{img}}"></a></div>
+        <div class = "c-box">
+        <div class="content"><a href="{{url}}"><h2>{{title}}</h2></a></div>
+        <div class="content"><a href="{{url}}"><p>{{desc}}</p></a></div>
+        <div class="content"><p style="color:rgb(77, 255, 0);">Publish Date:- </p><p>{{p_date}}</p></div>
+        </div>
+        </div> 
+    {% endfor %}  
+    
+    <div class = "head">TODAY'S NEWS</div>
+    {% for title,desc,img,p_date,url in all %}
+    <div class="wrapper">
+        <div class="item"><a href="{{url}}"><img src="{{img}}"></a></div>
+        <div class = "c-box">
+        <div class="content"><a href="{{url}}"><h2>{{title}}</h2></a></div>
+        <div class="content"><p>{{desc}}</p></div>
+        <div class="content"><p style="color:rgb(77, 255, 0);">Publish Date:- </p><p> {{p_date}} </p></div>
+        </div>
+        </div> 
+    {% endfor %}
+<footer>
+<div class="head-f"><h2> Copyright &copy; World Press 2022</h2></div>
+</footer>
+</body>
 </html>
