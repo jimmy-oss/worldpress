@@ -1,0 +1,17 @@
+ {% import 'search.html' as search%}
+
+{% block content %}
+    <div class="container">
+
+        <div class="row">
+
+            <h3> Found {{ news| count }} matches </h3>
+            <hr>
+            <ul>
+                {{ index.displayNewsList(news)}}
+            </ul>
+
+        </div>
+
+    </div>
+{% endblock %}

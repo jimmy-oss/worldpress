@@ -9,7 +9,6 @@
     <link rel="icon" href="../static/iconmonstr-newspaper-3.svg">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>News Website</title>
-    {% import 'news.html' as news%}
 </head>
 <body>
     <nav>
@@ -23,6 +22,14 @@
     </nav>
 <section id="main">
     <h2>Welcome to the WorldPress 🌎 </h2>
+    {% block content %}
+     <div class="container">
+    <form>
+        <input type="text" name="news_query" placeholder="Search for news" class="form-control">
+        <input type="submit"  value="Submit" class="btn btn-default">
+    </form>
+</div>
+{% endblock %}
     <div class="banner">
         <video  controls>
             <source src="../static/Eric Omondi arrested after attempting to storm Parliament buildings.mp4" type="video/mp4">
