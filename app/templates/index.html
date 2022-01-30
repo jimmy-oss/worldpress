@@ -12,7 +12,7 @@
 </head>
 <body>
     <nav>
-        <a href="/" class="logo"><h2>WorldPress</h2></a>
+        <a href="/" class="logo"><h2>World Press</h2></a>
         <ul class= "menu">
             <li class="nav-items"><a href='/'>Home</a></li>
             <li class="nav-items"><a href='/'>News</a></li>
@@ -22,9 +22,19 @@
     </nav>
 <section id="main">
     <h2>Welcome to the WorldPress 🌎 </h2>
-    <div class="banner"><video src="../static/reporter.mp4" muted loop autoplay></video>
+    <div class="banner">
+        <video  controls>
+            <source src="../static/Eric Omondi arrested after attempting to storm Parliament buildings.mp4" type="video/mp4">
+            <source src="../static/Eric Omondi arrested after attempting to storm Parliament buildings.mp4" type="video/ogg">
+            Your browser does not support HTML video.
+          </video>
+          <p><br>Kenyan comedian Eric Omondi was on Tuesday arrested and later released after he attempted to storm Parliament buildings in Nairobi.</br>
+
+         <br> with a list of demands to be presented to their leaders.
+            
+            Omondi and his troops were however dispersed by police who arrived at the scene and took the comedian into custody in a dramatic arrest.</br></p>
     </div>
-    <div class = "head">TODAY'S TOP HEADLINES</div>
+    <div class = "head" style="color: red; font-size: 28px;">TODAY'S TOP HEADLINES 🌎</div>
     {% for title,desc,img,p_date,url in contents %}
     <div class="wrapper">
         <div class="item"><a href="{{url}}"><img src="{{img}}"></a></div>
@@ -36,7 +46,7 @@
         </div> 
     {% endfor %}  
     
-    <div class = "head">TODAY'S NEWS</div>
+    <div class = "head" style="color: red;font-size: 28px;">TODAY'S NEWS 🌎</div>
     {% for title,desc,img,p_date,url in all %}
     <div class="wrapper">
         <div class="item"><a href="{{url}}"><img src="{{img}}"></a></div>
