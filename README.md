@@ -14,12 +14,14 @@ A website that allows users to browse news stories and read articles
 
 To use the application you should have python3 installed in your machine.
 
-> Flask==1.1.4
-> Flask-Bootstrap==3.3.7.1
-> Flask-Script==2.0.6
-> Flask-WTF==1.0.0
-> gunicorn==20.1.0
-> WTForms==2.3.3
+<ul>
+<li>Flask==1.1.4</li>
+<li> Flask-Bootstrap==3.3.7.1</li>
+<li> Flask-Script==2.0.6</li>
+<li> Flask-WTF==1.0.0</li>
+<li> gunicorn==20.1.0</li>
+<li>WTForms==2.3.3</li>
+</ul>
 
 <ul>
 <li>Clone this repo using git clone or download the ZIP file of the code</li>
