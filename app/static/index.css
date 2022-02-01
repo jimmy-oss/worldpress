@@ -3,17 +3,7 @@
   font-family: 'Josefin Slab', serif;
   font-size: 26px;
 }
-.banner video{
-  height: 100px;
-  width: 50%;
-  margin-left: 2rem;
  
-
-  /* Center and scale the image nicely */
-  background-position: cover;
-  background-repeat: no-repeat;
-  background-size: cover;  
-}
 .banner p{
   font-size: 50px;
   margin-left: 43rem;
