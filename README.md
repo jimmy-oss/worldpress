@@ -2,10 +2,6 @@
 
 The worldpress is a python website application that lets users get news articles by selecting the news source you prefer or you are most familiar with ,the user goes on to read the articles by clicking on the articles they are interested in!
 
-![Screen Shot 2022-01-30 at 18 24 07](https://user-images.githubusercontent.com/62022158/151705965-9809b0c2-dfd4-4fb8-a1b8-b6b3fe831b08.png)
-
-![Screen Shot 2022-01-30 at 18 20 37](https://user-images.githubusercontent.com/62022158/151706008-9b3d7f0f-0aa0-4844-844a-0f515e125980.png)
-
 # Description🌸
 
 A website that allows users to browse news stories and read articles

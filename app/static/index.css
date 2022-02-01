@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap');
+* {
+  font-family: 'Josefin Slab', serif;
+  font-size: 26px;
+}
+.banner video{
+  height: 400px;
+  width: 50%;
+  margin-left: 2rem;
+ 
+
+  /* Center and scale the image nicely */
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+.banner p{
+  font-size: 20px;
+  margin-left: 43rem;
+  margin-top: -17rem;
+  position: absolute;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: bold;
+}
+ 

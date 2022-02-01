@@ -1,72 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" href="../static/iconmonstr-newspaper-3.svg">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>News Website</title>
-</head>
-<body>
-    <nav>
-        <a href="/" class="logo"><h2>WorldPress</h2></a>
-        <ul class= "menu">
-            <li class="nav-items"><a href='/'>Home</a></li>
-            <li class="nav-items"><a href='/'>News</a></li>
-            <li class="nav-items"><a href='/'>Blogs</a></li>
-            <li class="nav-items"><a href='/'>Contact</a></li>
-        </ul>
-    </nav>
-<section id="main">
-    <h2>Welcome to the WorldPress 🌎 </h2>
-    {% block content %}
-     <div class="container">
-    <form>
-        <input type="text" name="news_query" placeholder="Search for news" class="form-control">
-        <input type="submit"  value="Submit" class="btn btn-default">
-    </form>
-</div>
-{% endblock %}
-    <div class="banner">
-        <video  controls>
-            <source src="../static/Eric Omondi arrested after attempting to storm Parliament buildings.mp4" type="video/mp4">
-            <source src="../static/Eric Omondi arrested after attempting to storm Parliament buildings.mp4" type="video/ogg">
-            Your browser does not support HTML video.
-          </video>
-          <p><br>Kenyan comedian Eric Omondi was on Tuesday arrested and later released after he attempted to storm Parliament buildings in Nairobi.</br>
+{% import 'macro.html' as macro} {% extends 'base.html' %}
 
-         <br> with a list of demands to be presented to their leaders.
-            
-            Omondi and his troops were however dispersed by police who arrived at the scene and took the comedian into custody in a dramatic arrest.</br></p>
-    </div>
-    <div class = "head" style="color: red; font-size: 28px;">TODAY'S TOP HEADLINES 🌎</div>
-    {% for title,desc,img,p_date,url in contents %}
-    <div class="wrapper">
-        <div class="item"><a href="{{url}}"><img src="{{img}}"></a></div>
-        <div class = "c-box">
-        <div class="content"><a href="{{url}}"><h2>{{title}}</h2></a></div>
-        <div class="content"><a href="{{url}}"><p>{{desc}}</p></a></div>
-        <div class="content"><p style="color:rgb(77, 255, 0);">Publish Date:- </p><p>{{p_date}}</p></div>
-        </div>
-        </div> 
-    {% endfor %}  
-    
-    <div class = "head" style="color: red;font-size: 28px;">TODAY'S NEWS 🌎</div>
-    {% for title,desc,img,p_date,url in all %}
-    <div class="wrapper">
-        <div class="item"><a href="{{url}}"><img src="{{img}}"></a></div>
-        <div class = "c-box">
-        <div class="content"><a href="{{url}}"><h2>{{title}}</h2></a></div>
-        <div class="content"><p>{{desc}}</p></div>
-        <div class="content"><p style="color:rgb(77, 255, 0);">Publish Date:- </p><p> {{p_date}} </p></div>
-        </div>
-        </div> 
-    {% endfor %}
-<footer>
-<div class="head-f"><h2> Copyright &copy; WorldPress 2022</h2></div>
-</footer>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    {% if title %}
+    <title>{{ title }}</title>
+    {% endif %}
+  </head>
+  <body>
+    <!-- Block styles -->
+
+    <!-- content block -->
+    {% block content %} {% endblock %}
+  </body>
 </html>

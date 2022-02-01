@@ -1,0 +1,46 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container-fluid">
+  <u><h1 class="text-center" style="font-size: 55px">WorldPress🌎</h1></u>
+  <hr />
+
+  {% for display in articles %}
+  <div class="row">
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-body">
+          <p>{{ display.title}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-body">
+          <img
+            src="{{display.urlToImage}}"
+            class="img-responsive"
+            alt="Article"
+          />
+          <p>{{ display.description}}</p>
+          <a href="{{display.url}}" class="btn btn-primary"
+            >Click here for more Info</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-body">
+          <p>{{ display.publishedAt}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+
+  {% endfor %}
+</div>
+
+{% endblock %}
