@@ -1,6 +1,6 @@
 # The WorldPress ✨
 
-The worldpress is a python website application that lets users get news articles by selecting the news source you prefer or you are most familiar with ,the user goes on to read the articles by clicking on the articles they are interested in!
+The worldpress is a python web application that lets users get news articles by selecting the news source you prefer or you are most familiar with ,the user goes on to read the articles by clicking on the articles they are interested in!
 
 ![Screen Shot 2022-02-01 at 17 18 35](https://user-images.githubusercontent.com/62022158/151985276-252a750b-eb10-4690-9e8b-72cf532ecf4b.png)
 
@@ -13,6 +13,13 @@ A website that allows users to browse news stories and read articles
 # INSTALLATION PROCESS ✨
 
 To use the application you should have python3 installed in your machine.
+
+> Flask==1.1.4
+> Flask-Bootstrap==3.3.7.1
+> Flask-Script==2.0.6
+> Flask-WTF==1.0.0
+> gunicorn==20.1.0
+> WTForms==2.3.3
 
 <ul>
 <li>Clone this repo using git clone or download the ZIP file of the code</li>
