@@ -21,9 +21,6 @@ To use the application you should have python3 installed in your machine.
 <li> Flask-WTF==1.0.0</li>
 <li> gunicorn==20.1.0</li>
 <li>WTForms==2.3.3</li>
-</ul>
-
-<ul>
 <li>Clone this repo using git clone or download the ZIP file of the code</li>
 <li>Open the terminal,run cd command into to the project directory and run the following command "python3 run.py"</li>
 <li>launch the worldpress website and enjoy the upcoming news🤗</li>
