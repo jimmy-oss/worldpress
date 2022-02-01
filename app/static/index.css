@@ -4,7 +4,7 @@
   font-size: 26px;
 }
 .banner video{
-  height: 400px;
+  height: 100px;
   width: 50%;
   margin-left: 2rem;
  
@@ -15,7 +15,7 @@
   background-size: cover;  
 }
 .banner p{
-  font-size: 20px;
+  font-size: 50px;
   margin-left: 43rem;
   margin-top: -17rem;
   position: absolute;
