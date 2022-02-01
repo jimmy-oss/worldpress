@@ -15,7 +15,7 @@ def index():
 
     news = get_news()
     # print(news)
-    title = "WorldPress 🌎"
+    title = "WorldPress🌎"
 
     return render_template('news.html', news=news, title=title)
 
@@ -27,7 +27,7 @@ def article(id):
     '''
 
     articles = get_article(id)
-    title = "WorldPress 🌎"
+    title = "WorldPress🌎"
 
     return render_template('article.html', articles=articles, title=title)
  
